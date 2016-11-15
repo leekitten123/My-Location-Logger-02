@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--내역-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"/>
+
+    <!--카테고리-->
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/category"/>
+
+    <!--내역 및 위치 저장-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내역 및 위치 저장"
+        android:layout_gravity="center"
+        android:id="@+id/btnSave"
+        android:onClick="onClickSave"/>
+
+    <!--지도에서 확인-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="지도에서 확인하기"
+        android:layout_gravity="center"
+        android:id="@+id/btnMap"
+        android:onClick="onClickMap"/>
+
+    <!-- 위도, 경도 확인-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:text="00"/>
+</LinearLayout>

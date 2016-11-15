@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category">
+        <item >공부</item>
+        <item >산책</item>
+        <item >식사</item>
+        <item >축구</item>
+    </string-array>
+</resources>
