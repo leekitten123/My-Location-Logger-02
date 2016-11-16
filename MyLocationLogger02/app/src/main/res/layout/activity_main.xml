@@ -37,10 +37,23 @@
         android:id="@+id/btnMap"
         android:onClick="onClickMap"/>
 
-    <!-- 위도, 경도 확인-->
-    <TextView
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text1"
-        android:text="00"/>
+        android:text="DB 초기화"
+        android:layout_gravity="center"
+        android:onClick="onClickReset"/>
+
+    <!--그래프 확인-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickChart"
+        android:text="그래프"/>
+
+    <!--파이 차트-->
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pie_Chart"/>
 </LinearLayout>
